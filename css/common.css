@@ -41,6 +41,11 @@ img {
   height: auto;
 }
 
+/*Helper class*/
+.hide {
+  display: none !important;
+}
+
 /*Base styles*/
 
 .sr-only {
@@ -57,20 +62,28 @@ img {
 .hero {
   color: #fff;
 }
-.title {
-  max-width: 496px;
-  margin: 0 auto 72px;
-}
 
 .team {
   background-color: #f4f4fd;
   color: #2e2f42;
 }
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  max-width: 375px;
+  padding: 0 16px;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 .logo {
   font-weight: 700;

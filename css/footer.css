@@ -1,16 +1,20 @@
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #2e2f42;
 }
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
-  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-info {
-  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .footer-logo {
@@ -33,8 +37,9 @@
 }
 
 .footer-text {
-  max-width: 264px;
+  width: 100%;
   margin: 0;
+  text-align: left;
 
   font-weight: 400;
   font-size: 16px;
@@ -44,7 +49,9 @@
 }
 
 .footer-social {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-social-title {
@@ -94,20 +101,28 @@
   fill: #f4f4fd;
 }
 .footer-subscribe {
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .footer-subscribe-text {
+  margin: 0;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   color: #ffffff;
 }
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
   align-items: center;
+  gap: 16px;
+  width: 100%;
   margin-top: 16px;
 }
 .footer-form-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   font-size: 12px;
@@ -153,4 +168,73 @@
 .button-filled:focus,
 .button-filled:hover {
   background-color: #31d0aa;
+}
+.footer-subscribe-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: #ffffff;
+}
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 72px 24px;
+    padding: 0 108px;
+  }
+
+  .footer-info {
+    align-items: flex-start;
+    width: 264px;
+    max-width: none;
+  }
+
+  .footer-social {
+    align-items: flex-start;
+  }
+
+  .footer-subscribe {
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+    width: auto;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0;
+    padding: 0 15px;
+  }
+
+  .footer-info {
+    flex-shrink: 0;
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    flex-shrink: 0;
+  }
+
+  .footer-subscribe {
+    width: auto;
+    margin-left: auto;
+  }
 }

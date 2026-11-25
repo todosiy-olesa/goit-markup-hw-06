@@ -122,4 +122,7 @@
 <symbol id="send" viewBox="0 0 24 24" fill="none">
     <path fill="currentColor" d="M24 2 0 13.25l7.6699 2.3672L19.5 6.375 10.5017 16.4913l73e-4 23e-4-9e-3-23e-4V22l4.3013-4.1817 5.4488 1.6817z" />
 </symbol>
+<symbol id="burger-menu" viewBox="0 0 28 28" fill="none">
+    <path stroke-width="2" stroke="currentColor" stroke-linecap="round" d="M3.5 14h21M3.5 7h21M3.5 21h21" />
+</symbol>
 </svg>
